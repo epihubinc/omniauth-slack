@@ -32,6 +32,13 @@ OmniAuth Slack authorizes Slack users on behalf of a defined Slack application. 
 While you're in the application settings, add a Redirect URL to your application (under the `OAuth2 & Permissions` section), something simple like `http://localhost:3000/` or `https://myslackapp.com/`. The URL doesn't have to be accessible to the public internet, but it should be accessible to your development machine.
 
 
+## Running tests
+
+To validate that this functions on `ruby 3.0.2`, we run the following:
+```
+RUBYOPT='-W:deprecated' bundle exec rake
+```
+
 ## Using This Strategy
 
 First start by adding this gem to your Gemfile:
